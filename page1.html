@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="page1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Compucorp</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(51.524231,-0.073826);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:16,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var image = {
+    url: 'Icons/programming-code-signs.png',
+    // This marker is 20 pixels wide by 32 pixels high.
+    size: new google.maps.Size(50, 50),
+    // The origin for this image is (0, 0).
+    origin: new google.maps.Point(0, 0),
+    // The anchor for this image is the base of the flagpole at (0, 32).
+    anchor: new google.maps.Point(0, 25),
+    scaledSize: new google.maps.Size(25, 25)
+  };
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  icon:image
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Geek Label<br>4th Floor<br>27-33 Bethnal Green Road<br>Shoreditch<br>London<br>E1 6LA"
+  });
+
+infowindow.open(map,marker);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+    </head>
+    <body>
+
+        <div id="section1">
+        <div id="title" class="slide">
+           <div class="pre1">
+                <div class="posle">
+            <div class="floating-box4"><p class="icon15"><i class="fa fa-eye"></i></p>                
+            </div>
+            <div class="floating-box4"><p class="icon15"><i class="fa fa-eye"></i></p>                
+            </div>
+                </div>
+            </div>
+
+            <div class="after-box3"><p class="pa4">Geek Label</p></div>
+
+            <p class="pa5">A team of self confessed geeks who are all about</p>
+            <p class="pa6">great digital design</p>
+
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box4"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="slide1" class="slide">
+          <div class="pre">
+                <div class="posle">
+            <div class="floating-box3"><p class="icon10"><i class="fa fa-paint-brush"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon11"><i class="fa fa-heart"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon12"><i class="fa fa-wrench"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon13"><i class="fa fa-thumbs-o-down"></i></p>                
+            </div>
+                </div>
+            </div>
+
+            <p class="pa3">Some agencies love <span style="color: rgba(220,29,68,0.9)">design</span>, but don't know how to build</p>
+           
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box2"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="slide2" class="slide">
+            <div class="pre">
+                <div class="posle">
+            <div class="floating-box3"><p class="icon12"><i class="fa fa-wrench"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon14"><i class="fa fa-thumbs-o-up"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon10"><i class="fa fa-paint-brush"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon13"><i class="fa fa-thumbs-o-down"></i></p>                
+            </div>
+                </div>
+            </div>
+
+            <p class="pa3">Some agencies know how to <span style="color: rgba(220,29,68,0.9)">build</span>, but can't do design</p>
+           
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box2"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+        </div>
+        <div id="slide3" class="slide">
+            <div class="pre">
+                <div class="posle">
+            <div class="floating-box3"><p class="icon12"><i class="fa fa-wrench"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon14"><i class="fa fa-thumbs-o-up"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon10"><i class="fa fa-paint-brush"></i></p>                
+            </div>
+            <div class="floating-box3"><p class="icon14"><i class="fa fa-thumbs-o-up"></i></p>                
+            </div>
+                </div>
+            </div>
+
+            <p class="pa3">We love <span style="color: rgba(220,29,68,0.9)">both</span></p>
+           
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box2"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+        </div>
+        <div id="slide4" class="slide">
+
+            <p class="pa1">Services</p>
+            <div class="pre">
+                <div class="posle">
+            <div class="floating-box"><p class="icon1"><i class="fa fa-desktop"></i></p>
+                <p class="pa2">Web Development</p>
+            </div>
+            <div class="floating-box"><p class="icon2"><i class="fa fa-paint-brush"></i></p>
+                <p class="pa2">Design</p>
+            </div>
+            <div class="floating-box"><p class="icon3">Aa</p>
+                <p class="pa2">Branding</p>
+            </div>
+            <div class="floating-box"><p class="icon4"><i class="fa fa-newspaper-o"></i></p>
+                <p class="pa2">UX Research</p>
+            </div>
+                </div>
+            </div>
+
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+            
+        </div>         
+        <div id="slide5" class="slide">
+
+            <p class="pa1">Clients</p>
+            
+            <div class="pre">
+                <div class="posle">
+
+            <div class="floating-box2"><p class="icon9"><i class="fa fa-angle-left"></i></p>               
+            </div>
+            <div class="floating-box1"><p class="icon6"><i class="fa fa-apple"></i></p>               
+            </div>
+            <div class="floating-box1"><p class="icon7"><i class="fa fa-github"></i></p>                
+            </div>
+            <div class="floating-box1"><p class="icon8"><i class="fa fa-wikipedia-w"></i></p>                
+            </div>
+            <div class="floating-box2"><p class="icon9"><i class="fa fa-angle-right"></i></p>               
+            </div>
+                </div>
+            </div>
+
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box1"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="slide6" class="slide">
+
+        <p class="pa1">How to find us</p>
+
+            <div id="googleMap"></div>
+
+            <div class="prea">
+                <div class="poslea">
+            <div class="after-box5"><p class="icon5"><i class="fa fa-angle-down"></i></p></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="slide7" class="slide">
+
+            <p class="pa1">Contact</p>
+
+            <form class="form" action="action_page.php">
+  <input class="first" type="text" name="firstname" value="Name" size="28">
+  <br><br><br>
+  <input class="email" type="email" name="email" value="Email" size="28">
+  <br><br><br>
+  <textarea class="area" name="note" rows="4" cols="28">Message</textarea>
+  <br><br>
+  <input class="submit" type="submit" value="Send Message!">
+</form>
+
+            <p class="pa7">Or phone on: 01923 220121</p>
+
+        </div>
+        </div>
+
+    </body>
+</html>
